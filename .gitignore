@@ -1,0 +1,11 @@
+# Ignore the node_modules folder, as it contains dependencies that can be restored via package.json
+node_modules/
+
+# Ignore macOS-specific system files (e.g., .DS_Store) that are not relevant to the project
+.DS_Store
+
+# Ignore environment configuration files, e.g., .env, which may contain sensitive data (like API keys, passwords)
+.env
+
+# Ignore distribution folders or build folders, which are generated after compilation (e.g., from SCSS to CSS)
+dist/

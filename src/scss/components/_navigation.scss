@@ -1,0 +1,59 @@
+.main-nav {
+    background-color: $primary-color;
+    padding: $content-padding 0;
+    box-shadow: $box-shadow;
+    position: sticky;
+    top: 0;
+    z-index: $z-header;
+    
+    &__container {
+      @include flex-center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 $content-padding;
+    }
+    
+    &__logo {
+      font-family: $main-font;
+      font-size: 1.8rem;
+      color: $light-color;
+      text-decoration: none;
+      font-weight: bold;
+      
+      span {
+        color: $secondary-color;
+      }
+      
+      &:hover {
+        @include evil-pulse(1.05);
+      }
+    }
+    
+    &__menu {
+      @include flex-center;
+      list-style-type: none;
+      
+      li {
+        margin-left: $content-padding;
+        
+        a {
+          color: $light-color;
+          text-decoration: none;
+          padding: $base-spacing;
+          border-radius: $border-radius;
+          @include transition;
+          
+          &:hover {
+            background-color: rgba($light-color, 0.1);
+          }
+          
+          &.active {
+            background-color: $secondary-color;
+            color: $dark-color;
+          }
+        }
+      }
+    }
+    
+  }

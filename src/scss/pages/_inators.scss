@@ -1,59 +1,272 @@
-.inators {
-    padding: $section-spacing 0;
+// Styles for Inators page
+.inators-hero {
+  padding: $section-spacing 0;
+  
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $content-padding;
+    text-align: center;
+  }
+  
+  &__description {
+    max-width: 800px;
+    margin: 0 auto $section-spacing;
+    font-size: 1.1rem;
+  }
+  
+  &__categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $base-spacing;
+    margin-bottom: $section-spacing;
+  }
+  
+  &__category {
+    background-color: rgba($primary-color, 0.1);
+    border: 2px solid $primary-color;
+    border-radius: $border-radius;
+    padding: $base-spacing $content-padding;
+    cursor: pointer;
+    @include transition;
     
-    &__container {
+    &:hover {
+      background-color: rgba($primary-color, 0.2);
+    }
+    
+    &.active {
+      background-color: $primary-color;
+      color: $light-color;
+    }
+  }
+}
+
+.inators-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $content-padding * 2;
+}
+
+.inator-card {
+  @include inator-card;
+  
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $content-padding;
+  }
+  
+  &__title {
+    color: $primary-color;
+    margin-bottom: 0;
+  }
+  
+  &__category {
+    font-size: 0.8rem;
+    background-color: rgba($primary-color, 0.1);
+    color: $primary-color;
+    padding: $base-spacing / 2 $base-spacing;
+    border-radius: $border-radius;
+  }
+  
+  &__image {
+    width: 100%;
+    height: 200px;
+    background-color: lighten($primary-color, 40%);
+    border-radius: $border-radius;
+    margin-bottom: $content-padding;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  &__description {
+    margin-bottom: $content-padding;
+  }
+  
+  &__features {
+    margin-bottom: $content-padding;
+  }
+  
+  &__feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: $base-spacing;
+    
+    &:before {
+      content: "•";
+      color: $secondary-color;
+      font-size: 1.5rem;
+      margin-right: $base-spacing;
+    }
+  }
+  
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__price {
+    font-weight: bold;
+    color: $primary-color;
+  }
+  
+  // Kategorie inatorów
+  &--destruction {
+    border-left: 4px solid #ff4136;
+    
+    .inator-card__category {
+      background-color: rgba(#ff4136, 0.1);
+      color: #ff4136;
+    }
+  }
+  
+  &--mind-control {
+    border-left: 4px solid #0074D9;
+    
+    .inator-card__category {
+      background-color: rgba(#0074D9, 0.1);
+      color: #0074D9;
+    }
+  }
+  
+  &--transportation {
+    border-left: 4px solid #3D9970;
+    
+    .inator-card__category {
+      background-color: rgba(#3D9970, 0.1);
+      color: #3D9970;
+    }
+  }
+  
+  &--transformation {
+    border-left: 4px solid #FFDC00;
+    
+    .inator-card__category {
+      background-color: rgba(#FFDC00, 0.1);
+      color: darken(#FFDC00, 30%);
+    }
+  }
+}
+
+// Dodatkowe style dla sekcji inator-special
+.inator-special {
+  padding: $section-spacing 0;
+  background-color: rgba($primary-color, 0.05);
+  
+  &__container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 $content-padding;
-    }
-    
-    &__grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: $content-padding * 2;
-      
-    }
-    
-    &__card {
-      @include inator-card;
-      
-      h3 {
-        font-family: $main-font;
-        color: $primary-color;
-        margin-bottom: $base-spacing * 2;
-        font-size: 1.5rem;
-      }
-      
-      &-image {
-        width: 100%;
-        height: 200px;
-        background-color: lighten($primary-color, 40%);
-        border-radius: $border-radius;
-        margin-bottom: $base-spacing * 2;
-        object-fit: cover;
-      }
-      
-      &-description {
-        color: $text-color;
-        margin-bottom: $base-spacing * 2;
-        line-height: 1.6;
-      }
-      
-      // Różne kategorie inatorów z kolorystycznym wyróżnieniem
-      &--destruction {
-        border-left: 4px solid #ff4136;
-      }
-      
-      &--mind-control {
-        border-left: 4px solid #0074D9;
-      }
-      
-      &--transportation {
-        border-left: 4px solid #3D9970;
-      }
-      
-      &--transformation {
-        border-left: 4px solid #FFDC00;
-      }
-    }
   }
+  
+  &__content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: $content-padding * 2;
+  }
+  
+  &__image {
+      height: 400px;
+      background-color: lighten($primary-color, 40%);
+      border-radius: $border-radius-large;
+      background-image: url('../images/placeholder-special-inator.jpg');
+      background-size: cover;
+      background-position: center;
+  }
+  
+  &__title {
+      color: $primary-color;
+      margin-bottom: $base-spacing;
+      font-size: 2rem;
+  }
+  
+  &__description {
+      margin-bottom: $content-padding;
+      font-size: 1.1rem;
+      line-height: 1.6;
+  }
+  
+  &__features {
+      margin-bottom: $content-padding;
+  }
+  
+  &__feature {
+      display: flex;
+      align-items: center;
+      margin-bottom: $base-spacing;
+  }
+  
+  &__feature-icon {
+      font-size: 1.5rem;
+      margin-right: $base-spacing;
+  }
+  
+  &__price {
+      display: block;
+      font-weight: bold;
+      color: $secondary-color;
+      font-size: 1.3rem;
+      margin-bottom: $base-spacing;
+  }
+}
+
+// Style dla sekcji zamówienia własnego -Inatora
+.custom-inator {
+  padding: $section-spacing 0;
+  
+  &__container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 $content-padding;
+  }
+  
+  &__description {
+      text-align: center;
+      margin-bottom: $content-padding * 2;
+      font-size: 1.1rem;
+  }
+  
+  &__form {
+      .form-group {
+          margin-bottom: $content-padding;
+      }
+      
+      label {
+          display: block;
+          margin-bottom: $base-spacing;
+          font-weight: bold;
+      }
+      
+      input, select, textarea {
+          width: 100%;
+          padding: $base-spacing;
+          border: 1px solid darken($light-color, 10%);
+          border-radius: $border-radius;
+          font-family: inherit;
+      }
+      
+      .checkbox-group {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: $base-spacing;
+      }
+      
+      .checkbox {
+          display: flex;
+          align-items: center;
+          
+          input {
+              width: auto;
+              margin-right: $base-spacing;
+          }
+      }
+      
+      button {
+          margin-top: $content-padding;
+          width: 100%;
+      }
+  }
+}

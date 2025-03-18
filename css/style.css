@@ -1,4 +1,23 @@
 @charset "UTF-8";
+.main-nav__menu, .main-nav__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inator-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 32px;
+  transition: all 0.4s ease;
+}
+.inator-card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +47,7 @@ ul, ol {
 a {
   text-decoration: none;
   color: #5e548e;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 a:hover {
   color: rgb(62.1814159292, 55.5663716814, 93.9336283186);
@@ -103,7 +122,7 @@ blockquote cite {
   text-align: center;
   text-decoration: none;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .button--primary {
@@ -116,7 +135,7 @@ blockquote cite {
   font-family: "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .button--primary:hover {
   background-color: rgb(72.7876106195, 65.0442477876, 109.9557522124);
@@ -134,31 +153,13 @@ blockquote cite {
   font-family: "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .button--secondary:hover {
   background-color: rgb(68.0263157895, 238.9736842105, 166.8552631579);
   transform: translateY(-2px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   color: #1a1a1a;
-}
-.button--danger {
-  background-color: #ff4136;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: "Arial", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-.button--danger:hover {
-  background-color: rgb(255, 16.7910447761, 3);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  color: #fff;
 }
 .button--small {
   padding: 8px 12px;
@@ -178,9 +179,6 @@ blockquote cite {
   z-index: 100;
 }
 .main-nav__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
@@ -211,9 +209,6 @@ blockquote cite {
   }
 }
 .main-nav__menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   list-style-type: none;
 }
 .main-nav__menu li {
@@ -224,7 +219,7 @@ blockquote cite {
   text-decoration: none;
   padding: 8px;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .main-nav__menu li a:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -319,7 +314,7 @@ blockquote cite {
 .main-footer__links ul li a {
   color: #fff;
   opacity: 0.7;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .main-footer__links ul li a:hover {
   opacity: 1;
@@ -448,7 +443,7 @@ blockquote cite {
   border-radius: 8px;
   padding: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -610,7 +605,7 @@ blockquote cite {
   min-height: 400px;
   background-color: rgb(208.2743362832, 204.7345132743, 225.2654867257);
   border-radius: 8px;
-  background-image: url("../images/placeholder-founder.jpg");
+  background-image: url("../src/assets/dundersztyc-2.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -698,7 +693,7 @@ blockquote cite {
   border-radius: 4px;
   padding: 8px 16px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .inators-hero__category:hover {
   background-color: rgba(94, 84, 142, 0.2);
@@ -714,18 +709,6 @@ blockquote cite {
   gap: 32px;
 }
 
-.inator-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 16px;
-  margin-bottom: 32px;
-  transition: all 0.3s ease;
-}
-.inator-card:hover {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
-}
 .inator-card__header {
   display: flex;
   align-items: center;

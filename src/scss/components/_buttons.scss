@@ -11,19 +11,15 @@
   .button {
     @extend %button-base;
     
-    // Główny przycisk (np. "Join Evil Organization")
+    // Główny przycisk (np. "ZOBACZ WSZYSTKIE INATORY")
     &--primary {
       @include button-style($primary-color, $light-color, darken($primary-color, 10%));
+
     }
     
-    // Drugi styl przycisku (np. "Learn More")
+    // Drugi styl przycisku (np. "SZCZEGÓŁY")
     &--secondary {
       @include button-style($secondary-color, $dark-color, darken($secondary-color, 10%));
-    }
-    
-    // Trzeci styl przycisku (np. "Self Destruct")
-    &--danger {
-      @include button-style(#ff4136, $light-color, darken(#ff4136, 10%));
     }
     
     // Przycisk o różnych rozmiarach
@@ -36,4 +32,5 @@
       padding: ($base-spacing * 2) ($base-spacing * 4);
       font-size: 1.2rem;
     }
+
   }

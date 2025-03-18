@@ -1,4 +1,4 @@
-// Styles for Inators page
+//Inators Page
 .inators-hero {
   padding: $section-spacing 0;
   
@@ -49,7 +49,7 @@
 }
 
 .inator-card {
-  @include inator-card;
+  @extend %inator-card;
   
   &__header {
     display: flex;
@@ -80,6 +80,7 @@
     background-size: cover;
     background-position: center;
 
+    //Zdjecia
     &--destruction {
       background-image: url('../src/assets/destruction-inator.png');
       background-size: cover;

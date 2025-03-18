@@ -151,16 +151,16 @@
     background-position: center;
     
     &--lab {
-      background-image: url('../images/placeholder-lab.jpg');
-      grid-column: span 2;
+      background-image: url('../src/assets/doofenshmirtz_evil_lab.png');
     }
     
     &--balcony {
-      background-image: url('../images/placeholder-balcony.jpg');
+      background-image: url('../src/assets//doofenshmirtz_evil_balcony.png');
+      grid-column: span 2;
     }
     
     &--trap {
-      background-image: url('../images/placeholder-trap.jpg');
+      background-image: url('../src/assets/doofenshmirtz_evil_trap.png');
     }
   }
 }

@@ -63,7 +63,7 @@ p:last-child {
   text-align: center;
   color: #5e548e;
   font-weight: bold;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   position: relative;
 }
 .section-title:after {
@@ -170,7 +170,7 @@ blockquote cite {
 }
 
 .main-nav {
-  background-color: #5e548e;
+  background-color: #231942;
   padding: 16px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -235,9 +235,9 @@ blockquote cite {
 }
 
 .main-header {
-  background-color: #5e548e;
+  background-color: #231942;
   color: #fff;
-  padding: 48px 0;
+  padding: 32px 0;
   text-align: center;
 }
 .main-header__container {
@@ -265,7 +265,7 @@ blockquote cite {
 .page-header {
   background-color: rgb(118.9115044248, 108.6017699115, 168.3982300885);
   color: #fff;
-  padding: 48px 0;
+  padding: 32px 0;
 }
 .page-header__container {
   max-width: 800px;
@@ -284,7 +284,7 @@ blockquote cite {
 .main-footer {
   background-color: #1a1a1a;
   color: #fff;
-  padding: 48px 0 0;
+  padding: 32px 0 0;
 }
 .main-footer__container {
   max-width: 1200px;
@@ -337,7 +337,7 @@ blockquote cite {
   background-color: rgb(13.25, 13.25, 13.25);
   text-align: center;
   padding: 16px 0;
-  margin-top: 48px;
+  margin-top: 32px;
   font-size: 0.9rem;
   opacity: 0.7;
 }
@@ -357,7 +357,7 @@ blockquote cite {
 }
 
 .hero {
-  padding: 48px 0;
+  padding: 32px 0;
 }
 .hero__container {
   max-width: 1200px;
@@ -395,7 +395,7 @@ blockquote cite {
 }
 
 .mission {
-  padding: 48px 0;
+  padding: 32px 0;
   background-color: #fff;
 }
 .mission__container {
@@ -424,13 +424,13 @@ blockquote cite {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .mission__image--doof {
-  background-image: url("images/placeholder-doof.jpg");
+  background-image: url("../src/assets/dunder.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .featured-inators {
-  padding: 48px 0;
+  padding: 32px 0;
   background-color: rgba(94, 84, 142, 0.05);
 }
 .featured-inators__container {
@@ -449,6 +449,9 @@ blockquote cite {
   padding: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .featured-inators__card:hover {
   transform: translateY(-5px);
@@ -467,18 +470,31 @@ blockquote cite {
   background-size: cover;
   background-position: center;
 }
+.featured-inators__card-image--teleport {
+  background-image: url("../src/assets/teleport-inator.jpg");
+}
+.featured-inators__card-image--disappear {
+  background-image: url("../src/assets/invisi-nator.jpg");
+}
+.featured-inators__card-image--giant {
+  background-image: url("../src/assets/wielkoinator.jpg");
+}
 .featured-inators__card-description {
   margin-bottom: 16px;
   text-align: center;
 }
 .featured-inators__more {
   text-align: center;
-  margin-top: 48px;
+  margin-top: 32px;
+}
+
+.button--secondary {
+  align-self: center;
 }
 
 .join-evil {
-  padding: 48px 0;
-  background-color: #5e548e;
+  padding: 32px 0;
+  background-color: #231942;
   color: #fff;
 }
 .join-evil__container {
@@ -489,7 +505,7 @@ blockquote cite {
 }
 .join-evil__description {
   font-size: 1.2rem;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -498,7 +514,7 @@ blockquote cite {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 .join-evil__benefit {
   background-color: rgba(255, 255, 255, 0.1);
@@ -526,7 +542,7 @@ blockquote cite {
 }
 
 .about-history {
-  padding: 48px 0;
+  padding: 32px 0;
 }
 .about-history__container {
   max-width: 1200px;
@@ -576,7 +592,7 @@ blockquote cite {
 }
 
 .about-founder {
-  padding: 48px 0;
+  padding: 32px 0;
   background-color: #fff;
 }
 .about-founder__container {
@@ -615,7 +631,7 @@ blockquote cite {
 }
 
 .about-facility {
-  padding: 48px 0;
+  padding: 32px 0;
   background-color: rgba(94, 84, 142, 0.05);
 }
 .about-facility__container {
@@ -645,18 +661,18 @@ blockquote cite {
   background-position: center;
 }
 .about-facility__image--lab {
-  background-image: url("../images/placeholder-lab.jpg");
-  grid-column: span 2;
+  background-image: url("../src/assets/doofenshmirtz_evil_lab.png");
 }
 .about-facility__image--balcony {
-  background-image: url("../images/placeholder-balcony.jpg");
+  background-image: url("../src/assets//doofenshmirtz_evil_balcony.png");
+  grid-column: span 2;
 }
 .about-facility__image--trap {
-  background-image: url("../images/placeholder-trap.jpg");
+  background-image: url("../src/assets/doofenshmirtz_evil_trap.png");
 }
 
 .inators-hero {
-  padding: 48px 0;
+  padding: 32px 0;
 }
 .inators-hero__container {
   max-width: 1200px;
@@ -666,7 +682,7 @@ blockquote cite {
 }
 .inators-hero__description {
   max-width: 800px;
-  margin: 0 auto 48px;
+  margin: 0 auto 32px;
   font-size: 1.1rem;
 }
 .inators-hero__categories {
@@ -674,7 +690,7 @@ blockquote cite {
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 .inators-hero__category {
   background-color: rgba(94, 84, 142, 0.1);
@@ -703,7 +719,7 @@ blockquote cite {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 16px;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   transition: all 0.3s ease;
 }
 .inator-card:hover {
@@ -792,7 +808,7 @@ blockquote cite {
 }
 
 .inator-special {
-  padding: 48px 0;
+  padding: 32px 0;
   background-color: rgba(94, 84, 142, 0.05);
 }
 .inator-special__container {
@@ -841,52 +857,6 @@ blockquote cite {
   color: #73f3bd;
   font-size: 1.3rem;
   margin-bottom: 8px;
-}
-
-.custom-inator {
-  padding: 48px 0;
-}
-.custom-inator__container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-.custom-inator__description {
-  text-align: center;
-  margin-bottom: 32px;
-  font-size: 1.1rem;
-}
-.custom-inator__form .form-group {
-  margin-bottom: 16px;
-}
-.custom-inator__form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-}
-.custom-inator__form input, .custom-inator__form select, .custom-inator__form textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid rgb(229.5, 229.5, 229.5);
-  border-radius: 4px;
-  font-family: inherit;
-}
-.custom-inator__form .checkbox-group {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-}
-.custom-inator__form .checkbox {
-  display: flex;
-  align-items: center;
-}
-.custom-inator__form .checkbox input {
-  width: auto;
-  margin-right: 8px;
-}
-.custom-inator__form button {
-  margin-top: 16px;
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -79,6 +79,43 @@
     margin-bottom: $content-padding;
     background-size: cover;
     background-position: center;
+
+    &--destruction {
+      background-image: url('../src/assets/destruction-inator.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--weather {
+      background-image: url('../src/assets/weather-inator.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--giant {
+      background-image: url('../src/assets/wielkoinator.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--mindcontrol {
+      background-image: url('../src/assets/mind-control-inator.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--disappear {
+      background-image: url('../src/assets/invisi-nator.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--teleport {
+      background-image: url('../src/assets/teleport-inator.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
   }
   
   &__description {
@@ -172,7 +209,7 @@
       height: 400px;
       background-color: lighten($primary-color, 40%);
       border-radius: $border-radius-large;
-      background-image: url('../images/placeholder-special-inator.jpg');
+      background-image: url('../src/assets/self-destruction-inator.png');
       background-size: cover;
       background-position: center;
   }

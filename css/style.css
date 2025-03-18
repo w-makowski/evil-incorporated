@@ -752,6 +752,36 @@ blockquote cite {
   background-size: cover;
   background-position: center;
 }
+.inator-card__image--destruction {
+  background-image: url("../src/assets/destruction-inator.png");
+  background-size: cover;
+  background-position: center;
+}
+.inator-card__image--weather {
+  background-image: url("../src/assets/weather-inator.png");
+  background-size: cover;
+  background-position: center;
+}
+.inator-card__image--giant {
+  background-image: url("../src/assets/wielkoinator.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.inator-card__image--mindcontrol {
+  background-image: url("../src/assets/mind-control-inator.png");
+  background-size: cover;
+  background-position: center;
+}
+.inator-card__image--disappear {
+  background-image: url("../src/assets/invisi-nator.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.inator-card__image--teleport {
+  background-image: url("../src/assets/teleport-inator.jpg");
+  background-size: cover;
+  background-position: center;
+}
 .inator-card__description {
   margin-bottom: 16px;
 }
@@ -825,7 +855,7 @@ blockquote cite {
   height: 400px;
   background-color: rgb(208.2743362832, 204.7345132743, 225.2654867257);
   border-radius: 8px;
-  background-image: url("../images/placeholder-special-inator.jpg");
+  background-image: url("../src/assets/self-destruction-inator.png");
   background-size: cover;
   background-position: center;
 }
